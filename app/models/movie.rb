@@ -4,11 +4,11 @@ class Movie < ActiveRecord::Base
     end
 
     def self.create_with_title(title)
-        Movie.create(title: title)
+        Movie.create(title: title) 
     end
 
-    def self.first_movie()
-        Movie.first
+    def self.first_movie() 
+        Movie.first 
     end
 
     def self.last_movie()
@@ -54,4 +54,4 @@ class Movie < ActiveRecord::Base
 
 
 
-end 
+end  
