@@ -23,7 +23,7 @@ class Movie < ActiveRecord::Base
         Movie.find(id)
     end
 
-    # NOMA
+
     def self.find_movie_with_attributes(item1)
         Movie.find_by(item1)
     end
@@ -32,7 +32,6 @@ class Movie < ActiveRecord::Base
         Movie.where('release_date > ?', 2002)
     end
 
-    # NOMA
     def self.update_with_attributes(title)
         Movie.update(title:title)
     end
